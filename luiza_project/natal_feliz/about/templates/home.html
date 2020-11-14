@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        {%if titulo%}
+            <title></title>
+        {%else%}
+    </head>
+
+<body>
+    {% for membro in membros %}
+        <h1> {{ membro.nome }} </h1>
+        <p> Sua profissão é: {{ membro.job }} </p>
+        <p> Local de trabalho: {{ membro.job_comp }} </p>
+    {% endfor %}
+</body>
+</html>
