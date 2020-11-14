@@ -20,7 +20,9 @@ membros = [
 # Create your views here.
 def home(request):
     contexto = {
-        'membros':membros
+        'membros':membros,
+        'titulo':"Shopping de natal"
+
     } 
     return render(request, 'home.html',contexto)
 

@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html>
     <head>
-        {%if titulo%}
-            <title></title>
-        {%else%}
+        {% if titulo %}
+            <title> {{titulo}}</title>
+        {% else %}
+             <title> Comprinhas natalinas</title>
+        {% endif %}
     </head>
 
 <body>
@@ -13,4 +15,5 @@
         <p> Local de trabalho: {{ membro.job_comp }} </p>
     {% endfor %}
 </body>
+
 </html>
