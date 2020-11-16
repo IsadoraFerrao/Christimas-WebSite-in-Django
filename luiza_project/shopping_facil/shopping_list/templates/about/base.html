@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        {% if titulo %}
+            <title> {{titulo}}</title>
+        {% else %}
+             <title> Comprinhas natalinas</title>
+        {% endif %}
+    </head>
+
+<body>
+    {% block content %} {% endblock %}
+</body>
+
+</html>

@@ -24,8 +24,8 @@ def home(request):
         'titulo':"Shopping de natal"
 
     } 
-    return render(request, 'home.html',contexto)
+    return render(request, 'about/home.html',contexto)
 
 
 def about(request):
-    return HttpResponse("<h1>Site sobre coisinhas de Natal</h1>")
+    return render(request, 'about/base.html')
